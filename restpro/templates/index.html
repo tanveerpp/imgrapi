@@ -1,0 +1,16 @@
+<table align="center" border="1px">
+    <th>Id</th>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Address</th>
+    <th>Password</th>
+    {%for i in data%}
+    <tr>
+        <td>{{i.id}}</td>
+        <td>{{i.name}}</td>
+        <td>{{i.email}}</td>
+        <td>{{i.address}}</td>
+        <td>{{i.password}}</td>
+    </tr>
+    {%endfor%}
+</table>
